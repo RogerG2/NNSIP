@@ -224,3 +224,58 @@ class DAGCreator:
             # ["col_2", "col_3", "col_4"],
         ]
         return dag
+
+
+    @staticmethod
+    def load_predefined_causalml_mode_1_dag():
+        dag = [
+            ["col_0", "col_1", "T"],
+            # ["col_0", "col_1", "col_2", "col_3", "col_4", "T"],
+            ["col_2"],
+            ["col_3"],
+            ["col_4"],
+            ["col_0", "col_1"],
+            ["col_0"],
+            ["col_1"],
+        ]
+        return dag
+
+    @staticmethod
+    def load_predefined_causalml_mode_2_dag():
+        dag = [
+            # ["col_0", "col_1", "col_2", "col_3", "col_4", "T"],
+            ["col_2"],
+            ["col_0", "col_1", "col_2"],
+            ["col_3", "col_4"],
+            ["col_3"],
+            ["col_4"],
+            ["col_0", "col_1"],
+            ["col_0"],
+            ["col_1"],
+        ]
+        return dag
+
+    @staticmethod
+    def load_predefined_causalml_mode_3_dag():
+        dag = [
+            ["col_0", "col_1", "col_2"],
+            ["col_0"],
+            ["col_1"],
+            ["col_2"],
+            ["col_1", "col_2", "T"],
+        ]
+        return dag
+
+    @staticmethod
+    def load_predefined_causalml_mode_4_dag():
+        dag = [
+            ["col_0", "col_1", "col_2"],
+            ["col_3", "col_4"],
+            ["col_0", "col_1", "col_2", "col_3", "col_4", "T"],
+            ["col_0"],
+            ["col_1"],
+            ["col_2"],
+            ["col_3"],
+            ["col_4"],
+        ]
+        return dag
